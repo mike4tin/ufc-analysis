@@ -40,7 +40,7 @@ taller_win_pct = decimal_to_percentage(float(taller_fighter_wins) / total_fights
 
 #Outut Below
 print("\nUFC Data Analysis by Mike Fortin")
-print("\nStatistics based on " + str(total_fights) + " fights between 1993 and 2019...")
+print("\nStatistics based on " + str(total_fights) + " fights between 1993 and 2019 ...")
 print("\nThe red corner wins " + str(red_win_pct) + "% of the time.")
 print("\nThe taller fighter wins " + str(taller_win_pct) + "% of the time. ")
 
