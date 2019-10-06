@@ -24,7 +24,7 @@ for fight in red_or_blue:
         red_wins += 1
 #print(red_wins)
 red_win_pct = decimal_to_percentage(float(red_wins) / total_fights)
-print("\nUFC Data Analysis by Mike Fortin ...")
+print("\nUFC Data Analysis by Mike Fortin")
 print("\nThe red corner wins " + str(red_win_pct) + "% of the time.")
 
 
