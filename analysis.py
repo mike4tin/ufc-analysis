@@ -38,11 +38,25 @@ for i in range(0,total_fights):
 
 taller_win_pct = decimal_to_percentage(float(taller_fighter_wins) / total_fights)
 
+red_reach = data.R_Reach_cms
+blue_reach = data.B_Reach_cms
+
+longer_fighter_wins = 0
+
+for i in range(0,total_fights):
+    if red_reach[i] > blue_reach[i] and red_or_blue[i] == "Red":
+        longer_fighter_wins += 1
+    elif blue_reach[i] > red_reach[i] and red_or_blue[i] == "Blue":
+        longer_fighter_wins += 1
+
+longer_win_pct = decimal_to_percentage(float(longer_fighter_wins) / total_fights)
+
 #Outut Below
 print("\nUFC Data Analysis by Mike Fortin")
 print("\nStatistics based on " + str(total_fights) + " fights between 1993 and 2019 ...")
 print("\nThe red corner wins " + str(red_win_pct) + "% of the time.")
 print("\nThe taller fighter wins " + str(taller_win_pct) + "% of the time. ")
+print("\nThe fighter with the longer reach wins " + str(longer_win_pct) + "% of the time.")
 
 
 
