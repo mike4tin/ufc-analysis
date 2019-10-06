@@ -65,14 +65,13 @@ for i in range(0, total_fights):
 leg_kick_win_pct = decimal_to_percentage(float(leg_kick_wins) / total_fights)
 
 
-
 #Outut Below
 print("\nUFC Data Analysis by Mike Fortin")
 print("\nStatistics based on " + str(total_fights) + " fights between 1993 and 2019 ...")
 print("\nThe red corner wins " + str(red_win_pct) + "% of the time.")
 print("\nThe taller fighter wins " + str(taller_win_pct) + "% of the time. ")
 print("\nThe fighter with the longer reach wins " + str(longer_win_pct) + "% of the time.")
-print("\nThe fighter who lands more leg kicks wins " + str(leg_kick_win_pct) + "% of the time.")
+print("\nThe fighter who lands more leg kicks on average in their career wins " + str(leg_kick_win_pct) + "% of the time.")
 
 
 
